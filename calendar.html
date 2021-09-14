@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8' />
+
+
+  <title>
+    ACM-IEEE Events
+  </title>
+
+
+  <style>
+
+
+    #calendar {
+      max-width: 900px;
+      margin: 40px auto;
+    }
+    a.usm {
+          color: white;
+        }
+        
+        a.usm:link, a.usm:visited {
+          border: none;
+          color: white;
+          padding: 16px 32px;
+          text-decoration: underline;
+          display: inline-block;
+          font-size: 48px;
+          margin: 4px 2px;
+          -webkit-transition-duration: 0.4s; /* Safari */
+          transition-duration: 0.4s;
+          cursor: pointer;
+        
+        }
+
+  </style>
+
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Fullcalendar CSS & JS  -->
+  <link href='https://unpkg.com/@fullcalendar/core@4.3.1/main.min.css' rel='stylesheet' />
+  <link href='https://unpkg.com/@fullcalendar/daygrid@4.3.0/main.min.css' rel='stylesheet' />
+  <link href='https://unpkg.com/@fullcalendar/list@4.3.0/main.min.css' rel='stylesheet' />
+  <script src='https://unpkg.com/@fullcalendar/core@4.3.1/main.min.js'></script>
+  <script src='https://unpkg.com/@fullcalendar/daygrid@4.3.0/main.min.js'></script>
+  <script src='https://unpkg.com/@fullcalendar/list@4.3.0/main.min.js'></script>
+  <script src='https://unpkg.com/@fullcalendar/google-calendar@4.3.0/main.min.js'></script>
+
+
+
+  <script>
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      plugins: [ 'dayGrid', 'list', 'googleCalendar' ],
+      header: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'dayGridMonth,listYear'
+      },
+      eventColor: '#72b5db',
+
+      displayEventTime: false, // don't show the time column in list view
+
+      googleCalendarApiKey: 'AIzaSyDpTZGK2MpO1FOko1nbCnzSg6ORPpgDTlU',
+
+      events: 'j18bs7k6bq23u33e0lfov97ta0@group.calendar.google.com',
+
+      eventClick: function(arg) {
+
+        // opens events in a popup window
+        window.open(arg.event.url, '_blank', 'width=700,height=600');
+
+        // prevents current tab from navigating
+        arg.jsEvent.preventDefault();
+      }
+
+    });
+
+    calendar.render();
+  });
+
+</script>
+
+</head>
+<body>
+
+     <section class="menu cid-rrN6GdHxKw" once="menu" id="menu1-4"> 
+
+
+        <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+    
+                </div>
+            </button>
+            <div class="menu-logo">
+                <div class="navbar-brand">
+                    <span class="navbar-logo">
+                        <a href="index.html">
+                             <img src="assets/images/logo-50x47.png" alt="logo" title="" style="height: 3.8rem;">
+                        </a>
+                    </span>
+                    <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-7" href="index.html">USM ACM-IEEE</a></span>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
+                    <li class="nav-item"><a class="nav-link link text-white display-7" href="https://drive.google.com/file/d/1Lpz0Vt6p3QNlbjbCYMy-M8qXAvbNMxKw/view?usp=sharing" target="_blank" aria-expanded="false">about</a></li>
+                    
+                    <li class="nav-item"><a class="nav-link link text-white display-7" href="gallery.html" aria-expanded="false">gallery</a></li>
+                    
+                    <li class="nav-item dropdown"><a class="nav-link link text-white dropdown-toggle display-7" href="https://mobirise.com" aria-expanded="false" data-toggle="dropdown-submenu">events</a>
+                        <div class="dropdown-menu">
+                            <a class="text-white dropdown-item display-7" href="tutorials.html" aria-expanded="false">tutorials</a>
+                            <a class="text-white dropdown-item display-7" href="LAN.html" aria-expanded="false">LAN Parties</a>
+                            <a class="text-white dropdown-item display-7" href="competition.html" aria-expanded="false">competitions</a>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item"><a class="nav-link link text-white display-7" href="current.html" aria-expanded="false">officers</a></li>
+                     <li class="nav-item"><a class="nav-link link text-white display-7" href="calendar.html" aria-expanded="false">calendar</a></li>
+    
+                    <!--
+                    <li class="nav-item dropdown"><a class="nav-link link text-white dropdown-toggle display-7" href="https://mobirise.com" aria-expanded="false" data-toggle="dropdown-submenu">officers</a>
+                        <div class="dropdown-menu">
+                            <a class="text-white dropdown-item display-7" href="current.html" aria-expanded="false">current<br></a>
+                            <a class="text-white dropdown-item display-7" href="#" aria-expanded="false">2018-2019</a>
+                            <a class="text-white dropdown-item display-7" href="#" aria-expanded="false">2017-2018</a>
+                        </div>
+                    </li>
+                    -->
+                    <li class="nav-item"><a class="nav-link link text-white display-7" href="contact.html" aria-expanded="false">contact</a></li></ul>
+                
+            </div>
+        </nav>
+
+    </section> 
+
+<br><br><br>
+    
+
+
+  <div id='calendar'></div>
+  
+  <section class="cid-rwf3f6jIfr" id="footer5-1h">
+      <div class="container">
+          <div class="media-container-row">
+              <div class="col-md-3">
+                  <div class="media-wrap">
+                      <a href="index.html">
+                         <img src="assets/images/logo-2-192x181.png" alt="logo" title="">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-9">
+                  <p class="mbr-text align-right links mbr-fonts-style display-7">
+                      <a href="https://drive.google.com/file/d/1Lpz0Vt6p3QNlbjbCYMy-M8qXAvbNMxKw/view?usp=sharing" target="_blank"" class="text-white">ABOUT</a>&nbsp; &nbsp; &nbsp; 
+                      <a href="gallery.html" class="text-white">GALLERY</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                      <a href="tutorials.html" class="text-white">EVENTS</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                      <a href="current.html" class="text-white">OFFICERS</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                      <a href="calendar.html" class="text-white">CALENDAR</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                      <a href="contact.html" class="text-white">CONTACT</a> &nbsp;&nbsp;&nbsp;&nbsp;
+
+                  </p>
+              </div>
+          </div>
+          <div class="footer-lower">
+              <div class="media-container-row">
+                  <div class="col-md-12">
+                      <hr>
+                  </div>
+              </div>
+              <div class="media-container-row mbr-white">
+                  <div class="col-md-6 copyright">
+                      <p class="mbr-text mbr-fonts-style display-7">
+                          © Copyright 2019 USM ACM-IEEE</p>
+                  </div>
+                  <!-- <div class="col-md-6">
+                      <div class="social-list align-right">
+                          <div class="soc-item">
+                              <a href="" target="_blank">
+                                  <span class="mbr-iconfont mbr-iconfont-social socicon-instagram socicon" style="color: rgb(255, 255, 255);"></span>
+                              </a>
+                          </div>
+                          <div class="soc-item">
+                              <a href="" target="_blank">
+                                  <span class="mbr-iconfont mbr-iconfont-social socicon-facebook socicon" style="color: rgb(255, 255, 255);"></span>
+                              </a>
+                          </div>
+                          <div class="soc-item">
+                              <a href="" target="_blank">
+                                  <span class="mbr-iconfont mbr-iconfont-social socicon-youtube socicon" style="color: rgb(255, 255, 255);"></span>
+                              </a>
+                          </div>
+                          
+                          
+                          
+                      </div>
+                  </div> -->
+              </div>
+          </div>
+      </div>
+  </section>
+
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/dropdown/js/script.min.js"></script>
+  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
+  <script src="assets/parallax/jarallax.min.js"></script>
+  <script src="assets/countdown/jquery.countdown.min.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  <script src="assets/formoid/formoid.min.js"></script>
+</body>
+
+</html>
